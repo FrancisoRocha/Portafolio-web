@@ -47,11 +47,14 @@
 }
 
 .skills__title,
-.hobbies_title {
+.hobbies_title,
+.academic__title {
     display: flex;
     font-size: 50px;
     margin-top: 50px;
     margin-left: 40px;
+    letter-spacing: 6px;
+    align-items: center;
     justify-content: center;
     font-family: "Titan-One-Regular";
 }
@@ -201,7 +204,8 @@ ul li a {
 
 /*SECCION SE SKILLS*/
 .skills,
-.hobbies {
+.hobbies,
+.academic {
     margin-bottom: 50px;
 }
 
@@ -213,11 +217,12 @@ ul li a {
 
 .skills__box {
     display: flex;
-    width: 200px;
-    height: 200px;
+    width: 900px;
+    height: 220px;
     margin: 20px;
     cursor: pointer;
-    margin-top: 50px;
+    margin-top: 80px;
+    margin-bottom: 80px;
     border-radius: 15px;
     justify-content: center;
     border: 1px solid #000000;
@@ -273,11 +278,11 @@ ul li a {
 
 .hobbies_box {
     display: flex;
-    width: 200px;
+    width: 900px;
     height: 200px;
     margin: 20px;
     cursor: pointer;
-    margin-top: 50px;
+    margin-top: 80px;
     border-radius: 15px;
     justify-content: center;
     border: 1px solid #000000;
@@ -302,7 +307,7 @@ ul li a {
 .museu,
 .fut {
     margin: 0px auto;
-    margin-top: 65px;
+    margin-top: 35px;
 }
 
 .camara_img,
@@ -312,4 +317,54 @@ ul li a {
 .museo_img,
 .futbool_img {
     margin: 0px auto;
+}
+/*SECCION DE FORMACION ACEDEMICA*/
+.academic{
+    margin-top: 100px;
+}
+.academic__courses__box{
+    width: 500px;
+    padding: 30px;
+    margin: 25px;
+}
+.academic__courses{
+    display: flex;
+    bottom: 200px;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.conalep,
+.irc{
+    width: 300px;
+    display: flex;
+    margin: 0px auto;
+    align-items: center;
+    justify-content: center;
+}
+.alura{
+    display: flex;
+    margin: 0px auto;
+}
+.names{
+    display: flex;
+    font-size: 25px;
+    margin-top: 15px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    justify-content: center;
+    color: var(--color-sombra);
+    font-family: "Playfair-variable";
+}
+.sub_names{
+    display: flex;
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: bold;
+    align-items: center;
+    letter-spacing: 5px;
+    justify-content: center;
+    color: var(--color-fuente);
+    font-family: "Titan-One-Regular";
 }
