@@ -31,11 +31,12 @@
 
 /*VARIBLES DE COLORES Y FUENTES*/
 :root {
-    --color-fondo: #D1D1D1;
+    --color-fondo: #ddddddd8;
     --color-fuente: #0000ff;
     --color-sombra: #000000;
     --color-hover-uno: #0004f3;
     --colo-hover-dos: #a71ec9;
+    --color-texto: #ffffff;
 }
 
 /*ESTILOS GENERALES*/
@@ -45,10 +46,13 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-
+body{
+    background-color: var(--color-fondo);
+}
 .skills__title,
 .hobbies_title,
-.academic__title {
+.academic__title,
+.experience__section__title{
     display: flex;
     font-size: 50px;
     margin-top: 50px;
@@ -120,8 +124,8 @@ ul li a {
     margin-right: 50px;
     margin-top: 5%;
     border-radius: 50%;
-    width: 350px;
-    height: 350px;
+    width: 400px;
+    height: 400px;
 }
 
 .title_bio {
@@ -175,7 +179,7 @@ ul li a {
     display: flex;
     height: auto;
     margin-top: 90px;
-    color: var(--color-fondo);
+    color: var(--color-texto);
     margin-bottom: 35px;
     background: var(--color-fuente);
     transition: all 500ms;
@@ -333,6 +337,7 @@ ul li a {
     margin-top: 50px;
     align-items: center;
     justify-content: center;
+    background: var(--color-fuente);
 }
 .conalep,
 .irc{
@@ -354,7 +359,7 @@ ul li a {
     text-align: center;
     letter-spacing: 1px;
     justify-content: center;
-    color: var(--color-sombra);
+    color: var(--color-texto);
     font-family: "Playfair-variable";
 }
 .sub_names{
@@ -367,4 +372,94 @@ ul li a {
     justify-content: center;
     color: var(--color-fuente);
     font-family: "Titan-One-Regular";
+}
+/*SECCION DE EXPERIENCIA*/
+.experience
+{
+    gap: 50px;
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    flex-direction: column;
+    justify-content: center;
+}
+.experience__img{
+    width: 650px;
+    border-radius: 20px;
+}
+.experiencie__box{
+    gap: 35px;
+    display: flex;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    align-items: center;
+}
+.experience__info{
+    width: 500px;
+    height: 300px;
+    border-radius: 25px;
+}
+.experience__title{
+    padding: 30px;
+    display: flex;
+    font-size: 30px;
+    margin-top: 15px;
+    text-align: center;
+    letter-spacing: 4px;
+    color: var(--color-sombra);
+    font-family: "Titan-One-Regular";
+}
+.experience__text-uno,
+.experience__text-dos,
+.experience__text{
+    display: flex;
+    font-size: 22px;
+    padding: 15px;
+    letter-spacing: 5px;
+    text-align: justify;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-fuente);
+    font-family: "playfair-static";
+}
+.experience__box{
+    display: flex;
+    margin-top: 80px;
+    
+    align-items: center;
+    margin-bottom: 50px;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+.experience__info-container{
+    width: 500px;
+    height: 300px;
+    border-radius: 25px;
+    margin-right: 50px;
+}
+/*SECCION DE BOTONES*/
+.experience__description{
+    gap: 50px;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.experiencia__botao--repo,
+.experience__botao--demo{
+    width: 200px;
+    height: 80px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: var(--color-fuente);
+    font-family: "playfair-static";
+    transition: all 500ms;
+}
+.experiencia__botao--repo:hover,
+.experience__botao--demo:hover{
+    color: var(--color-fondo);
+    background: var(--color-hover-uno);
 }
