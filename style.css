@@ -88,6 +88,7 @@ body{
 
 ul li {
     list-style: none;
+    
 }
 
 ul li a {
@@ -176,13 +177,13 @@ ul li a {
 
 /*SECCION SOBRE MI*/
 .about {
-    display: flex;
     height: auto;
+    display: flex;
     margin-top: 90px;
-    color: var(--color-texto);
     margin-bottom: 35px;
-    background: var(--color-fuente);
     transition: all 500ms;
+    color: var(--color-texto);
+    background: var(--color-fuente);
 }
 
 .about_title {
@@ -240,7 +241,7 @@ ul li a {
 
 .skills__img img {
     display: flex;
-    width: 50px;
+    width: 80px;
 }
 
 .html,
@@ -462,4 +463,101 @@ ul li a {
 .experience__botao--demo:hover{
     color: var(--color-fondo);
     background: var(--color-hover-uno);
+}
+/*CONTACTO*/
+.formcontato__contacto{
+    display: flex;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.formcontato__img{
+    height: 760px;
+    border-radius: 10px;
+}
+.formcontato__title{
+    display: flex;
+    font-size: 45px;
+    /* margin-top: -100px; */
+    margin-left: 60px;
+    letter-spacing: 3px;
+    font-family: "Titan-One-Regular";
+}
+.formcontato__subtext{
+    display: flex;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 60px;
+    color: var(--color-hover-uno);
+    font-family: "Playfair-variable";
+}
+.formcontato__form{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 60px;
+    flex-direction: column;
+}
+.formcontato__input{
+    height: 65px;
+    border: none;
+    display: flex;
+    padding: 10px;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+    font-family: monospace;
+    transition: all 500ms;
+}
+.formcontato__input:focus{
+    opacity: 0.8;
+    font-size: 30px; 
+    border-bottom: 3px solid var(--color-hover-uno);
+    
+}
+.formcontato__textarea{
+    height: 200px;
+    border: none;
+    resize: none;
+    display: flex;
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 30px;
+    font-weight: bold;
+    border-radius: 10px;
+    font-family: monospace;
+}
+.formcontato__botao{
+    width: 250px;
+    height: 80px;
+    border: none;         
+    display: flex;
+    font-size: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-texto);
+    font-family: "Titan-One-Regular";
+    background: var(--color-hover-uno);
+}
+input:focus, textarea:focus{
+    outline: none;
+}
+/*Footer*/
+.footer{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-texto);
+    background: var(--color-hover-uno);
+}
+.footer__rodape{
+    gap: 15px;
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    font-family: "Notable";
 }

@@ -1,0 +1,120 @@
+/*DISPOSITIVOS CELULARES*/
+
+@media screen and (320px <= width <= 480px){
+
+    .menu_header {
+        display: flex;
+        margin-top: 10%;
+        margin-left: 1%;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu_list {
+        display: none;
+    }
+    .foto_men {
+        width: 350px;
+        height: 350px;
+        margin-top: 8%;
+        margin: 0px auto;
+        float: inline-end;
+        border-radius: 50%;
+    }
+    .title_bio {
+        padding: 50px;
+    }
+    .title_subsection {
+        display: flex;
+        padding: 35px;
+        font-size: 35px;
+        margin-top: -2%;
+    }
+    .title_network {
+        gap: 25px;
+        display: flex;
+        justify-content: center;
+    }
+    .about__paragraph {
+        display: flex;
+        font-size: 20px;
+        font-weight: bold;
+        padding-right: 10%;
+    }
+    /*SECCION SE SKILLS*/
+    .skills__line{
+        display: flex;
+        flex-direction: column;
+    }
+    .skills__box{
+        width: 140px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .two-skill,
+    .for-skill,
+    .six-skill{
+        margin-top: -350px;
+        margin-left: 192px;
+    }
+    .three-skill,
+    .five-skill{
+        margin-top: -50px;
+    }
+    .skills__img img {
+        width: 50px;
+        margin-top: -80px;
+        display: flex;
+    }
+    .name {
+        display: flex;
+        font-size: 18px;
+        margin-top: 17px;
+    }
+    /*SECCION DE HOBBIES*/
+    .hobbies_line {
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .hobbies_box {
+        width: 130px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .hobbi-one,
+    .hobbi-three,
+    .hobbi-five{
+        margin-left: -150px;
+    }
+    .hobbi-two,
+    .hobbi-for,
+    .hobbi-six{
+        margin-top: -260px;
+        margin-left: 190px;
+    }
+    /*Formación académica*/
+    .academic__title{
+        font-size: 35px;
+    }
+    .academic__courses{
+        display: flex;
+        bottom: 200px;
+        margin-top: 50px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+    .academic__courses__box{
+        width: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}

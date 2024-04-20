@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/blue.jpg" type="image/x-icon">
     <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
     <div class="tudo">
@@ -36,7 +37,7 @@
                         <a href="#xp">Proyectos</a>
                     </li>
                     <li class="menu_list_item">
-                        <a href="#">Contacto</a>
+                        <a href="#contacto">Contacto</a>
                     </li>
                 </ul>
             </nav>
@@ -104,7 +105,7 @@
             <h3 class="skills__title">Skills</h3>
             <!--HTML-->
             <div class="skills__line">
-                <div class="skills__box">
+                <div class="skills__box uno-skill">
                     <ul class="html">
                         <li class="skills__img"><img src="img/html.png" alt="html" class="html_img"></li>
                         <li class="skills__name name"> HTML 5</li>
@@ -112,7 +113,7 @@
                 </div>
 
                 <!--CSS-->
-                <div class="skills__box">
+                <div class="skills__box two-skill"">
                     <ul class="css">
                         <li class="skills__img"><img src="img/css.png" alt="css" class="css_img"></li>
                         <li class="skills__name name"> CSS 3</li>
@@ -120,7 +121,7 @@
                 </div>
 
                 <!--JavaScript-->
-                <div class="skills__box">
+                <div class="skills__box three-skill"">
                     <ul class="JavaScript">
                         <li class="skills__img"><img src="img/js.png" alt="JavaScript" class="js_img"></li>
                         <li class="skills__name name"> JavaScript</li>
@@ -128,7 +129,7 @@
                 </div>
 
                 <!--REACT-->
-                <div class="skills__box">
+                <div class="skills__box for-skill"">
                     <ul class="react">
                         <li class="skills__img"><img src="img/REACT.png" alt="react" class="react_img"></li>
                         <li class="skills__name name"> React</li>
@@ -136,7 +137,7 @@
                 </div>
 
                 <!--PHP-->
-                <div class="skills__box">
+                <div class="skills__box five-skill"">
                     <ul class="php">
                         <li class="skills__img"><img src="img/php.png" alt="PHP" class="php_img"></li>
                         <li class="skills__name name"> PHP</li>
@@ -144,7 +145,7 @@
                 </div>
 
                 <!--MONGO DB-->
-                <div class="skills__box">
+                <div class="skills__box six-skill"">
                     <ul class="java">
                         <li class="skills__img"><img src="img/java_226777.png" alt="java" class="java_img"></li>
                         <li class="skills__name name">Java</li>
@@ -158,42 +159,42 @@
             <h3 class="hobbies_title">Hobbies</h3>
             <div class="hobbies_line">
                 <!--PINTURA-->
-                <div class="hobbies_box">
+                <div class="hobbies_box hobbi-one">
                     <ul class="foto">
                         <li class="hobbies_img"><img src="icon/camara.png" alt="camara" class="camara_img"> </li>
                         <li class="hobbies_name name">Tomar Fotos</li>
                     </ul>
                 </div>
                 <!--FOTOGRAFIA-->
-                <div class="hobbies_box">
+                <div class="hobbies_box hobbi-two">
                     <ul class="pintura">
                         <li class="hobbies_img"><img src="icon/paint.png" alt="pintura" class="paint_img""></li>
                         <li class="hobbies_name name">Pintar</li>
                     </ul>
                 </div>
                 <!--MUSICA-->
-                <div class="hobbies_box">
+                <div class="hobbies_box hobbi-three">
                     <ul class="music">
                         <li class="hobbies_img"><img src="icon/musica.png" alt="musica" class="music_img""></li>
                         <li class="hobbies_name name">Escuchar Musica</li>
                     </ul>
                 </div>
                 <!--VIDEOJUEGOS-->
-                <div class="hobbies_box">
+                <div class="hobbies_box hobbi-for">
                     <ul class="game">
                         <li class="hobbies_img"><img src="icon/videojuegos.png" alt="game" class="games_img""></li>
                         <li class="hobbies_name name">Video Juegos</li>
                     </ul>
                 </div>
                 <!--MUSEO-->
-                <div class="hobbies_box">
+                <div class="hobbies_box hobbi-five">
                     <ul class="museu">
                         <li class="hobbies_img"><img src="icon/museo.png" alt="museo" class="museo_img""></li>
                         <li class="hobbies_name name">Vistar Museos</li>
                     </ul>
                 </div>
                 <!--FUTBOOL-->
-                <div class="hobbies_box">
+                <div class="hobbies_box hobbi-six">
                     <ul class="fut">
                         <li class="hobbies_img"><img src="icon/football.png" alt="futbool" class="futbool_img""></li>
                         <li class="hobbies_name name">Futbool</li>
@@ -201,6 +202,7 @@
                 </div>
             </div>
         </section>
+
         <!-- Sección de Formación académica -->
         <section class="academic" id="formacion">
             <h2 class="academic__title" >Formación académica</h2>
@@ -307,6 +309,37 @@
             </div> 
         </div>
     </section>
+
+    <!-- Sección de Contacto -->
+    <section class="formcontato" id="contacto">
+        <div  class="formcontato__contacto">
+            <div class="formcontato--esquerda">
+                <img class="formcontato__img" src="./imgprojects/contact_image.png" alt="imagen de contacto">
+            </div>
+            <div class="formcontato__text">
+                <h2 class="formcontato__title">Contacto</h2>
+                <h3 class="formcontato__subtext">¿Quieres contactarme?</h3>
+                <h3 class="formcontato__subtext">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </h3>
+                <form class="formcontato__form" name="form">
+                    <input class="formcontato__input nombre" type="text" name="nombre" placeholder="Nombre">
+                    <input class="formcontato__input email" type="email" name="email" placeholder="E-mail">
+                    <input class="formcontato__input mnsj" type="text" name="asunto" placeholder="Assunto">
+                    <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensaje" placeholder="Mensaje"></textarea>
+                    <button type="submit" class="formcontato__botao">Enviar mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Footer -->
+    <section class="footer">
+        <div class="footer__rodape">
+            <p>Desarrollado por Francisco Rocha</p>
+            <p>2024</p>
+        </div>
+    </section>
+</div>
 </div> 
+<script src="./forms.js"></script>
 </body>
 </html>
