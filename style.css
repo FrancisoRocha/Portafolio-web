@@ -40,19 +40,25 @@
 }
 
 /*ESTILOS GENERALES*/
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-body{
+
+body {
     background-color: var(--color-fondo);
 }
+
 .skills__title,
 .hobbies_title,
 .academic__title,
-.experience__section__title{
+.experience__section__title {
     display: flex;
     font-size: 50px;
     margin-top: 50px;
@@ -88,7 +94,7 @@ body{
 
 ul li {
     list-style: none;
-    
+
 }
 
 ul li a {
@@ -141,8 +147,6 @@ ul li a {
     font-family: "Titan-One-Regular";
     transition: all 800ms;
 }
-
-
 
 .title_subsection {
     display: flex;
@@ -323,16 +327,19 @@ ul li a {
 .futbool_img {
     margin: 0px auto;
 }
+
 /*SECCION DE FORMACION ACEDEMICA*/
-.academic{
+.academic {
     margin-top: 100px;
 }
-.academic__courses__box{
+
+.academic__courses__box {
     width: 500px;
     padding: 30px;
     margin: 25px;
 }
-.academic__courses{
+
+.academic__courses {
     display: flex;
     bottom: 200px;
     margin-top: 50px;
@@ -340,19 +347,22 @@ ul li a {
     justify-content: center;
     background: var(--color-fuente);
 }
+
 .conalep,
-.irc{
+.irc {
     width: 300px;
     display: flex;
     margin: 0px auto;
     align-items: center;
     justify-content: center;
 }
-.alura{
+
+.alura {
     display: flex;
     margin: 0px auto;
 }
-.names{
+
+.names {
     display: flex;
     font-size: 25px;
     margin-top: 15px;
@@ -363,7 +373,8 @@ ul li a {
     color: var(--color-texto);
     font-family: "Playfair-variable";
 }
-.sub_names{
+
+.sub_names {
     display: flex;
     font-size: 18px;
     margin-top: 20px;
@@ -374,9 +385,9 @@ ul li a {
     color: var(--color-fuente);
     font-family: "Titan-One-Regular";
 }
+
 /*SECCION DE EXPERIENCIA*/
-.experience
-{
+.experience {
     gap: 50px;
     display: flex;
     align-items: center;
@@ -385,23 +396,27 @@ ul li a {
     flex-direction: column;
     justify-content: center;
 }
-.experience__img{
+
+.experience__img {
     width: 650px;
     border-radius: 20px;
 }
-.experiencie__box{
+
+.experiencie__box {
     gap: 35px;
     display: flex;
     margin-top: 80px;
     margin-bottom: 50px;
     align-items: center;
 }
-.experience__info{
+
+.experience__info {
     width: 500px;
     height: 300px;
     border-radius: 25px;
 }
-.experience__title{
+
+.experience__title {
     padding: 30px;
     display: flex;
     font-size: 30px;
@@ -411,9 +426,10 @@ ul li a {
     color: var(--color-sombra);
     font-family: "Titan-One-Regular";
 }
+
 .experience__text-uno,
 .experience__text-dos,
-.experience__text{
+.experience__text {
     display: flex;
     font-size: 22px;
     padding: 15px;
@@ -424,58 +440,85 @@ ul li a {
     color: var(--color-fuente);
     font-family: "playfair-static";
 }
-.experience__box{
+
+.experience__box {
     display: flex;
     margin-top: 80px;
-    
+
     align-items: center;
     margin-bottom: 50px;
     justify-content: center;
     flex-direction: row-reverse;
 }
-.experience__info-container{
+
+.experience__info-container {
     width: 500px;
     height: 300px;
     border-radius: 25px;
     margin-right: 50px;
 }
+
 /*SECCION DE BOTONES*/
-.experience__description{
+.experience__description {
     gap: 50px;
     display: flex;
     margin-top: 20px;
     align-items: center;
     justify-content: center;
 }
+
 .experiencia__botao--repo,
-.experience__botao--demo{
+.experience__botao--demo {
     width: 200px;
     height: 80px;
     border: none;
     cursor: pointer;
     font-size: 20px;
     letter-spacing: 2px;
+    transition: all 500ms;
     color: var(--color-fuente);
     font-family: "playfair-static";
-    transition: all 500ms;
 }
+
+.experiencia__botao--repo-faq,
+.experience__botao--demo-faq,
+.experiencia__botao--repo-link,
+.experience__botao--demo-link {
+    width: 200px;
+    height: 80px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    letter-spacing: 2px;
+    transition: all 500ms;
+    color: var(--color-fuente);
+    font-family: "playfair-static";
+}
+
 .experiencia__botao--repo:hover,
-.experience__botao--demo:hover{
+.experience__botao--demo:hover,
+.experiencia__botao--repo-faq:hover,
+.experience__botao--demo-faq:hover,
+.experiencia__botao--repo-link:hover,
+.experience__botao--demo-link:hover {
     color: var(--color-fondo);
     background: var(--color-hover-uno);
 }
+
 /*CONTACTO*/
-.formcontato__contacto{
+.formcontato__contacto {
     display: flex;
     margin-bottom: 50px;
     align-items: center;
     justify-content: center;
 }
-.formcontato__img{
+
+.formcontato__img {
     height: 760px;
     border-radius: 10px;
 }
-.formcontato__title{
+
+.formcontato__title {
     display: flex;
     font-size: 45px;
     /* margin-top: -100px; */
@@ -483,7 +526,8 @@ ul li a {
     letter-spacing: 3px;
     font-family: "Titan-One-Regular";
 }
-.formcontato__subtext{
+
+.formcontato__subtext {
     display: flex;
     font-size: 20px;
     margin-top: 20px;
@@ -491,13 +535,15 @@ ul li a {
     color: var(--color-hover-uno);
     font-family: "Playfair-variable";
 }
-.formcontato__form{
+
+.formcontato__form {
     display: flex;
     margin-top: 30px;
     margin-left: 60px;
     flex-direction: column;
 }
-.formcontato__input{
+
+.formcontato__input {
     height: 65px;
     border: none;
     display: flex;
@@ -509,13 +555,15 @@ ul li a {
     font-family: monospace;
     transition: all 500ms;
 }
-.formcontato__input:focus{
+
+.formcontato__input:focus {
     opacity: 0.8;
-    font-size: 30px; 
+    font-size: 30px;
     border-bottom: 3px solid var(--color-hover-uno);
-    
+
 }
-.formcontato__textarea{
+
+.formcontato__textarea {
     height: 200px;
     border: none;
     resize: none;
@@ -527,25 +575,35 @@ ul li a {
     border-radius: 10px;
     font-family: monospace;
 }
-.formcontato__botao{
+
+.formcontato__botao {
     width: 250px;
     height: 80px;
-    border: none;         
+    border: none;
     display: flex;
     font-size: 20px;
     margin-top: 30px;
     border-radius: 10px;
     align-items: center;
+    transition: all 500ms;
     justify-content: center;
     color: var(--color-texto);
     font-family: "Titan-One-Regular";
     background: var(--color-hover-uno);
 }
-input:focus, textarea:focus{
+
+.formcontato__botao:hover {
+    background-color: var(--colo-hover-dos);
+    color: var(--color-texto);
+}
+
+input:focus,
+textarea:focus {
     outline: none;
 }
+
 /*Footer*/
-.footer{
+.footer {
     height: 80px;
     display: flex;
     align-items: center;
@@ -553,7 +611,8 @@ input:focus, textarea:focus{
     color: var(--color-texto);
     background: var(--color-hover-uno);
 }
-.footer__rodape{
+
+.footer__rodape {
     gap: 15px;
     display: flex;
     font-size: 20px;
